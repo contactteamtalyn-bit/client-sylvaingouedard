@@ -33,7 +33,7 @@ export function Hero() {
       <div className="wrap-wide grid w-full items-center gap-12 md:grid-cols-2 md:gap-10">
         {/* Texte */}
         <div>
-          <h1 className="animate-fade-up font-display italic text-encre" style={{ fontSize: 'clamp(3.2rem, 9vw, 7.5rem)', lineHeight: 0.92, maxWidth: 720 }}>
+          <h1 className="animate-fade-up font-display italic text-encre" style={{ fontSize: 'clamp(2.8rem, 7vw, 5.6rem)', lineHeight: 0.96, maxWidth: 640 }}>
             <span className="block">Ici,</span>
             <span className="block">pas de miroir.</span>
             <span className="block" style={{ color: '#C4A882' }}>Juste vous.</span>

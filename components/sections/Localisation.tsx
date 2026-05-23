@@ -23,7 +23,7 @@ export function Localisation() {
         <div className="flex flex-col justify-center">
           <Reveal><p className="eyebrow text-encre/60">— Nous trouver</p></Reveal>
           <Reveal delay={70}>
-            <h2 className="mt-5 font-display italic text-encre" style={{ fontSize: 'clamp(2.6rem,5vw,4.5rem)', lineHeight: 0.98 }}>
+            <h2 className="mt-5 font-display italic text-encre" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.6rem)', lineHeight: 1.02 }}>
               30, rue <em className="not-italic">Feydeau.</em>
             </h2>
           </Reveal>

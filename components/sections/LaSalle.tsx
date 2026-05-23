@@ -1,7 +1,7 @@
 import { SmartImage } from '@/components/ui/SmartImage'
 import { Reveal } from '@/components/ui/Reveal'
 
-const photos = ['salle-01', 'salle-02', 'salle-03', 'salle-04', 'salle-05', 'salle-06']
+const photos = ['salle-01', 'salle-02', 'salle-03']
 
 export function LaSalle() {
   return (
@@ -10,7 +10,7 @@ export function LaSalle() {
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><p className="eyebrow text-champagne">— L&apos;écrin</p></Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-6 font-display italic" style={{ fontSize: 'clamp(2.4rem,5vw,4.2rem)', lineHeight: 1.05 }}>
+            <h2 className="mt-6 font-display italic" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.6rem)', lineHeight: 1.08 }}>
               La salle pastel. <em className="not-italic">Le jardin d&apos;hiver.</em>
             </h2>
           </Reveal>

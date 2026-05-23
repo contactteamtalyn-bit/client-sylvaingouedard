@@ -8,7 +8,7 @@ export function LeVisagisme() {
         <div className="md:col-span-6">
           <Reveal><p className="eyebrow text-champagne">— Le cœur du métier</p></Reveal>
           <Reveal delay={70}>
-            <h2 className="mt-6 font-display italic text-encre" style={{ fontSize: 'clamp(2.6rem,5vw,4.5rem)', lineHeight: 1.0 }}>
+            <h2 className="mt-6 font-display italic text-encre" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.6rem)', lineHeight: 1.04 }}>
               L&apos;art du <em className="not-italic">visagisme.</em>
             </h2>
           </Reveal>
@@ -35,7 +35,7 @@ export function LeVisagisme() {
         <Reveal variant="curtain" className="md:col-span-6">
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden border border-champagne/40 bg-rose">
-              <SmartImage src="/images/equipe/sylvain.jpg" alt="Sylvain Gouedard, coiffeur visagiste" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+              <SmartImage src="/images/relooking/cliente-01.jpg" alt="Lecture du visage — l&apos;art du visagisme" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
             </div>
             <span className="absolute -left-3 top-6 inline-block border border-champagne bg-creme px-4 py-2 font-display text-[16px] italic text-champagne" style={{ transform: 'rotate(-8deg)' }}>
               Hair Couture

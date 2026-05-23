@@ -15,7 +15,7 @@ export function Relooking() {
         <div className="max-w-2xl">
           <Reveal><p className="eyebrow text-champagne">Aller plus loin</p></Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-6 font-display italic text-encre" style={{ fontSize: 'clamp(2.6rem,5vw,4.5rem)', lineHeight: 1.0 }}>
+            <h2 className="mt-6 font-display italic text-encre" style={{ fontSize: 'clamp(2.2rem,4.5vw,3.6rem)', lineHeight: 1.04 }}>
               Se réinventer, <em className="not-italic">complètement.</em>
             </h2>
           </Reveal>

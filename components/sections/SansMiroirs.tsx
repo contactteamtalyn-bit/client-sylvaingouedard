@@ -33,7 +33,7 @@ export function SansMiroirs() {
       <div className="wrap-wide relative">
         <Reveal className="text-center">
           <p className="eyebrow text-champagne">— Le choix radical</p>
-          <h2 className="mt-6 font-display italic text-encre" style={{ fontSize: 'clamp(4.5rem,15vw,13rem)', lineHeight: 0.82 }}>
+          <h2 className="mt-6 font-display italic text-encre" style={{ fontSize: 'clamp(3rem,9vw,7rem)', lineHeight: 0.9 }}>
             <BigWord word="Sans" />
             <BigWord word="miroir." />
           </h2>

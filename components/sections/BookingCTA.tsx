@@ -41,7 +41,7 @@ export function BookingCTA() {
       <div className="wrap relative z-[2]">
         <Reveal><p className="eyebrow text-champagne">Votre moment</p></Reveal>
         <Reveal delay={90}>
-          <h2 className="mx-auto mt-6 max-w-5xl font-display italic text-creme" style={{ fontSize: 'clamp(3rem,10vw,8.5rem)', lineHeight: 0.95 }}>
+          <h2 className="mx-auto mt-6 max-w-5xl font-display italic text-creme" style={{ fontSize: 'clamp(2.6rem,7vw,5.6rem)', lineHeight: 1 }}>
             Prête à vous
             <br />
             <em style={{ color: '#C4A882' }}>découvrir&nbsp;?</em>
