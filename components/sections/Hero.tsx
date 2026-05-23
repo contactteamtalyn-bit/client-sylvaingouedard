@@ -41,17 +41,17 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-[420px] animate-fade-up" style={{ animationDelay: '0.5s' }}>
           <div className="relative aspect-[4/5] w-full overflow-hidden bg-rose">
             <SmartImage
-              src="/images/hero/portrait.jpg"
-              alt="Une cliente révélée — Maison Sylvain Gouedard"
+              src="/images/relooking/cliente-06.jpg"
+              alt="Une transformation — avant et après, Maison Sylvain Gouedard"
               fill
               priority
               sizes="(max-width:768px) 100vw, 420px"
               className="object-cover"
-              style={{ objectPosition: '50% 18%' }}
+              style={{ objectPosition: '50% 28%' }}
             />
-            <div aria-hidden className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(30,26,23,0.30), transparent 42%)' }} />
-            <span className="absolute bottom-5 left-0 right-0 text-center font-display text-[14px] italic text-creme" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.55)' }}>
-              Révélée, sans miroir.
+            <div aria-hidden className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(30,26,23,0.34), transparent 38%)' }} />
+            <span className="absolute bottom-4 left-0 right-0 text-center font-sans text-[11px] font-medium uppercase tracking-[0.26em] text-creme" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.6)' }}>
+              Avant&nbsp;·&nbsp;Après
             </span>
           </div>
           <svg viewBox="0 0 24 24" className="absolute -bottom-6 -right-2 h-10 w-10 text-encre" style={{ opacity: 0.08 }} fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
