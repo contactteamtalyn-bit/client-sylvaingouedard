@@ -1,24 +1,7 @@
-'use client'
-
-import { useRef } from 'react'
+import { SmartImage } from '@/components/ui/SmartImage'
 import { DemoCTA } from '@/components/DemoModal'
 
 export function Hero() {
-  const ovalRef = useRef<HTMLDivElement>(null)
-
-  function onMove(e: React.MouseEvent) {
-    const box = e.currentTarget as HTMLElement
-    const oval = ovalRef.current
-    if (!oval) return
-    const r = box.getBoundingClientRect()
-    const dx = (e.clientX - (r.left + r.width / 2)) / r.width
-    const dy = (e.clientY - (r.top + r.height / 2)) / r.height
-    oval.style.transform = `translate(${-dx * 26}px, ${-dy * 26}px)`
-  }
-  function onLeave() {
-    if (ovalRef.current) ovalRef.current.style.transform = 'translate(0,0)'
-  }
-
   return (
     <section id="top" className="relative flex min-h-[100svh] items-center overflow-hidden bg-creme pb-16 pt-28 md:pt-24">
       <div className="wrap-wide absolute inset-x-0 top-[84px] z-10 flex items-start justify-between gap-4 md:top-[96px]">
@@ -54,21 +37,21 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Pseudo-miroir interactif */}
+        {/* Portrait — une cliente révélée (illustre « Juste vous ») */}
         <div className="relative mx-auto w-full max-w-[420px] animate-fade-up" style={{ animationDelay: '0.5s' }}>
-          <div onMouseMove={onMove} onMouseLeave={onLeave} className="relative aspect-[4/5] w-full overflow-hidden" style={{ background: '#EDE8E2' }}>
-            <div
-              ref={ovalRef}
-              aria-hidden
-              className="absolute left-1/2 top-1/2 h-[58%] w-[44%] -translate-x-1/2 -translate-y-1/2 transition-transform duration-500 ease-out"
-              style={{
-                borderRadius: '50% 50% 48% 52% / 60% 60% 40% 40%',
-                background: 'radial-gradient(50% 50% at 50% 40%, rgba(30,26,23,0.18), rgba(30,26,23,0.05) 70%, transparent)',
-                filter: 'blur(18px)',
-              }}
+          <div className="relative aspect-[4/5] w-full overflow-hidden bg-rose">
+            <SmartImage
+              src="/images/hero/portrait.jpg"
+              alt="Une cliente révélée — Maison Sylvain Gouedard"
+              fill
+              priority
+              sizes="(max-width:768px) 100vw, 420px"
+              className="object-cover"
+              style={{ objectPosition: '50% 18%' }}
             />
-            <span className="absolute bottom-5 left-0 right-0 text-center font-display text-[14px] italic text-encre/45">
-              Ce n&apos;est pas un miroir.
+            <div aria-hidden className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(30,26,23,0.30), transparent 42%)' }} />
+            <span className="absolute bottom-5 left-0 right-0 text-center font-display text-[14px] italic text-creme" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.55)' }}>
+              Révélée, sans miroir.
             </span>
           </div>
           <svg viewBox="0 0 24 24" className="absolute -bottom-6 -right-2 h-10 w-10 text-encre" style={{ opacity: 0.08 }} fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
