@@ -48,7 +48,7 @@ export function SansMiroirs() {
           ))}
         </div>
 
-        <Reveal variant="curtain" delay={120} className="mt-20">
+        <Reveal delay={120} className="mt-20">
           <figure>
             <div className="relative aspect-[16/9] overflow-hidden bg-rose">
               <SmartImage src="/images/sans-miroirs/salon.jpg" alt="La salle pastel — 30 rue Feydeau, Paris 2e" fill sizes="100vw" className="object-cover" />

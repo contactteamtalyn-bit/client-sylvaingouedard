@@ -32,7 +32,7 @@ export function LeVisagisme() {
           </Reveal>
         </div>
 
-        <Reveal variant="curtain" className="md:col-span-6">
+        <Reveal className="md:col-span-6">
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden border border-champagne/40 bg-rose">
               <SmartImage src="/images/relooking/cliente-01.jpg" alt="Lecture du visage — l&apos;art du visagisme" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />

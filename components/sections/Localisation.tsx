@@ -6,7 +6,7 @@ export function Localisation() {
     <section id="contact" className="bg-sauge py-24 md:py-32">
       <div className="wrap grid items-stretch gap-10 md:grid-cols-2 md:gap-14">
         {/* Carte */}
-        <Reveal variant="curtain">
+        <Reveal>
           <div className="relative h-full min-h-[320px] overflow-hidden border border-encre/15">
             <iframe
               title="Maison Sylvain Gouedard — 30 rue Feydeau, Paris 2e"

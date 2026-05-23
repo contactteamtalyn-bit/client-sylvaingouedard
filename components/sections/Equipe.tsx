@@ -13,7 +13,7 @@ export function Equipe() {
       <div className="wrap">
         <div className="grid items-center gap-12 md:grid-cols-12 md:gap-16">
           {/* Image d'ambiance — atelier, aucun visage nominatif */}
-          <Reveal variant="curtain" className="md:col-span-7">
+          <Reveal className="md:col-span-7">
             <div className="relative aspect-[3/2] overflow-hidden border border-champagne/40 bg-rose">
               <SmartImage
                 src="/images/sans-miroirs/salle-02.jpg"

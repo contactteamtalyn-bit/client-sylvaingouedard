@@ -18,6 +18,12 @@ export function Reveal({ children, className, variant = 'up', delay = 0, thresho
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    // Déjà dans le viewport au montage → révéler immédiatement (jamais de contenu masqué)
+    const r = el.getBoundingClientRect()
+    if (r.top < window.innerHeight && r.bottom > 0) {
+      setSeen(true)
+      return
+    }
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
